@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.w3schools.com/js/js_ajax_xmlfile.asp -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba AJAX</title>
+    <!-- COmpiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+
+<body>
+    <!-- Creacion del contenido con boton-->
+    <div class="container">
+        <div class="section">
+            <!--creacion del button-->
+            <!-- le damos un ID al boton para usarlo en el JS-->
+            <button class="btn" id="boton">CatalogoGames/Json</button>
+            <!-- creacion de la table-->
+            <table>
+                <!--creacion de las cabeceras-->
+                <thead>
+                    <tr>
+                        <th>Name/Game</th>
+                        <th>Consola</th>
+                        <th>Rol</th>
+                    </tr>
+                </thead>
+                <!-- dibujar los datos del json el tbody-->
+                <!--Le doy un ID al tbody para identificarlo-->
+                <tbody id="res">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="ajax2.js"></script>
+</body>
+
+</html>
